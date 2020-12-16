@@ -62,8 +62,10 @@
     <!-- Main Content -->
     <section class="faq">
         <div class="container">
-            <h2 class="question">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</h2>
-            <p class="answer">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione, in expedita molestiae iste magni distinctio nobis quae accusamus illo sed consequatur tempore dolorum impedit? Beatae dolorem laudantium laboriosam aperiam earum?</p>
+            <?php foreach( $faqs as $faq) { ?>
+            <h2 class="question"> <?php echo $faq['question'] ?> </h2>
+            <p class="answer"> <?php echo $faq['answer'] ?> </p>
+            <?php }?>
         </div>
     </section>
 
